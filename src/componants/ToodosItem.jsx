@@ -22,7 +22,7 @@ const ToodosItem = ({ todoText, index }) => {
             <div className='d-flex justify-content-between my-3 align-items-center bg-info p-3 rounded gap-3 shadow'>
                 {
                     isEditing ? <div>
-                        <input type="text" value={editText} onChange={e => setEditText(e.target.value)} />
+                        <input type="text" value={editText} onChange={e => setEditText(e.target.value)} className='form-control' />
                     </div> : <div className='fs-5 fw-bold'> {todoText} </div>
                 }
 
