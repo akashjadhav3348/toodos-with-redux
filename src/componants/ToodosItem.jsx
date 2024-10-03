@@ -26,7 +26,6 @@ const ToodosItem = ({ todoText, index }) => {
                     </div> : <div className='fs-5 fw-bold'> {todoText} </div>
                 }
 
-
                 <div className='d-flex gap-3'>
                     {
                         isEditing ?
