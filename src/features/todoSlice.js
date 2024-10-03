@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    value: ['Read a News', 'Watch a Movie', 'Read a Book', 'Play Games', 'Listen Music', 'Sleep', 'Code']
+    value: [ 'Reading a Book', 'Watching TV', 'Learning JavaScript' ]
 }
 
 const todoSlice = createSlice({
