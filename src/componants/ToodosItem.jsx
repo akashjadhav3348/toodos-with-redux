@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { deleteTodo, edit } from '../features/todoSlice';
 
-const ToodosItem = ({ todoTest, index }) => {
+const ToodosItem = ({ todoText, index }) => {
     const [isEditing, setIsEditing] = useState(false)
     const [editText, setEditText] = useState(todoTest)
 
-    const [editIndex, setEditIndex] = useState(index)
+    const [editIndex] = useState(index)
     const dispatch = useDispatch();
 
     const updateMyTodo = () => {
@@ -23,7 +23,7 @@ const ToodosItem = ({ todoTest, index }) => {
                 {
                     isEditing ? <div>
                         <input type="text" value={editText} onChange={e => setEditText(e.target.value)} />
-                    </div> : <div className='fs-5 fw-bold'> {todoTest} </div>
+                    </div> : <div className='fs-5 fw-bold'> {todoText} </div>
                 }
 
 
