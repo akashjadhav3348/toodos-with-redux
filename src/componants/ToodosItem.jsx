@@ -33,7 +33,7 @@ const ToodosItem = ({ todoTest, index }) => {
                             <button className='btn btn-success' onClick={updateMyTodo}>Update</button> :
                             <button className='btn btn-warning' onClick={() => setIsEditing(true)}>Edit</button>
                     }
-                    <button className='btn btn-danger' onClick={() => dispalyToodos(deleteTodo(index))}>Delete</button>
+                    <button className='btn btn-danger' onClick={() => dispatch(deleteTodo(index))}>Delete</button>
                 </div>
             </div>
         </>
